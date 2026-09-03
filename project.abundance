@@ -236,8 +236,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.3567708333333333,
-      "y": 0.41714285714285715,
+      "x": 0.341796875,
+      "y": 0.43999999999999995,
       "uniqueID": "id-1303",
       "name": "Width",
       "ioValues": [
@@ -871,6 +871,14 @@
         }
       ],
       "selectedColor": "Keep Out"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.4446614583333333,
+      "y": 0.23428571428571426,
+      "uniqueID": "id-1598",
+      "name": "x + tolerance * 2",
+      "currentEquation": "x + tolerance * 2"
     }
   ],
   "allConnectors": [
@@ -920,9 +928,9 @@
       "ap2ID": "id-1303"
     },
     {
-      "ap2Name": "y length",
+      "ap2Name": "x",
       "ap1ID": "id-1303",
-      "ap2ID": "id-1315"
+      "ap2ID": "id-1598"
     },
     {
       "ap2Name": "geometry",
@@ -1038,6 +1046,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-1595",
       "ap2ID": "id-1256"
+    },
+    {
+      "ap2Name": "y length",
+      "ap1ID": "id-1598",
+      "ap2ID": "id-1315"
     }
   ],
   "unitsKey": "Inches",
