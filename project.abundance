@@ -375,8 +375,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.42643229166666663,
-      "y": 0.7514285714285714,
+      "x": 0.361328125,
+      "y": 0.8285714285714286,
       "uniqueID": "id-1327",
       "name": "height / step",
       "ioValues": [
@@ -722,8 +722,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.521484375,
-      "y": 0.8028571428571428,
+      "x": 0.47851562499999994,
+      "y": 0.6257142857142857,
       "uniqueID": "id-1392",
       "name": "totalWidth / steps",
       "ioValues": [
@@ -1005,8 +1005,8 @@
     },
     {
       "atomType": "Fusion",
-      "x": 0.6822916666666666,
-      "y": 0.7599999999999999,
+      "x": 0.66015625,
+      "y": 0.7,
       "uniqueID": "id-1481",
       "ioValues": [
         {
@@ -1646,8 +1646,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.7486979166666666,
-      "y": 0.9114285714285715,
+      "x": 0.7591145833333333,
+      "y": 0.7657142857142857,
       "uniqueID": "id-1546",
       "ioValues": [
         {
@@ -1673,8 +1673,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.447265625,
-      "y": 0.8914285714285715,
+      "x": 0.453125,
+      "y": 0.8942857142857142,
       "uniqueID": "id-1556",
       "ioValues": [
         {
@@ -1690,8 +1690,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.83203125,
-      "y": 0.6057142857142858,
+      "x": 0.853515625,
+      "y": 0.5257142857142857,
       "uniqueID": "id-1561",
       "ioValues": [
         {
@@ -1703,6 +1703,93 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.62890625,
+      "y": 0.8914285714285715,
+      "uniqueID": "id-1575",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 2.9166678333333445
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.6666666666666666,
+      "y": 0.8971428571428571,
+      "uniqueID": "id-1581",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.8704427083333334,
+      "y": 0.8085714285714286,
+      "uniqueID": "id-1585",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.5481770833333333,
+      "y": 0.8257142857142857,
+      "uniqueID": "id-1589",
+      "name": "offset - stepWidth",
+      "ioValues": [
+        {
+          "name": "offset",
+          "ioValue": 3.5000014000000133
+        },
+        {
+          "name": "stepWidth",
+          "ioValue": 0.5833335666666689
+        }
+      ],
+      "currentEquation": "offset - stepWidth"
+    },
+    {
+      "atomType": "Color",
+      "x": 0.9485677083333333,
+      "y": 0.8571428571428571,
+      "uniqueID": "id-1595",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Keep Out"
     }
   ],
   "allConnectors": [
@@ -1782,6 +1869,11 @@
       "ap2ID": "id-1556"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1315",
+      "ap2ID": "id-1575"
+    },
+    {
       "ap2Name": "x length",
       "ap1ID": "id-1319",
       "ap2ID": "id-1315"
@@ -1790,6 +1882,11 @@
       "ap2Name": "totalWidth",
       "ap1ID": "id-1319",
       "ap2ID": "id-1392"
+    },
+    {
+      "ap2Name": "offset",
+      "ap1ID": "id-1319",
+      "ap2ID": "id-1589"
     },
     {
       "ap2Name": "Geometry",
@@ -1815,6 +1912,11 @@
       "ap2Name": "distX",
       "ap1ID": "id-1392",
       "ap2ID": "id-1348"
+    },
+    {
+      "ap2Name": "stepWidth",
+      "ap1ID": "id-1392",
+      "ap2ID": "id-1589"
     },
     {
       "ap2Name": "remove",
@@ -1875,6 +1977,36 @@
       "ap2Name": "Shape 3",
       "ap1ID": "id-1556",
       "ap2ID": "id-1481"
+    },
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-1561",
+      "ap2ID": "id-1585"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1575",
+      "ap2ID": "id-1581"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-1581",
+      "ap2ID": "id-1585"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1585",
+      "ap2ID": "id-1595"
+    },
+    {
+      "ap2Name": "xDist",
+      "ap1ID": "id-1589",
+      "ap2ID": "id-1575"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-1595",
+      "ap2ID": "id-1256"
     }
   ],
   "unitsKey": "Inches",
