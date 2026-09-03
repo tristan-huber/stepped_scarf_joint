@@ -9,7 +9,7 @@
 - **shape** (geometry)
 - **slope_ratio** (number)
 - **steps** (number)
-- **Input** (number)
+- **tolerance** (number)
 
 
 
