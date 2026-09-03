@@ -11,18 +11,17 @@
     },
     {
       "name": "slope_ratio",
-      "ioValue": 7,
-      "currentEquation": "7"
+      "ioValue": 7
     },
     {
       "name": "steps",
-      "ioValue": 6,
-      "currentEquation": "6"
+      "ioValue": 4,
+      "currentEquation": "4"
     },
     {
       "name": "tolerance",
-      "ioValue": 0.1,
-      "currentEquation": "0.1"
+      "ioValue": 0.02,
+      "currentEquation": "0.02"
     }
   ],
   "topLevel": true,
@@ -42,7 +41,7 @@
     {
       "atomType": "Input",
       "x": 0.0231,
-      "y": 0.2942857142857143,
+      "y": 0.14,
       "uniqueID": "id-1258",
       "name": "shape",
       "type": "geometry"
@@ -50,14 +49,14 @@
     {
       "atomType": "Input",
       "x": 0.0231,
-      "y": 0.4257142857142857,
+      "y": 0.22400000000000003,
       "uniqueID": "id-1261",
       "name": "slope_ratio"
     },
     {
       "atomType": "Input",
       "x": 0.0231,
-      "y": 0.5800000000000001,
+      "y": 0.30800000000000005,
       "uniqueID": "id-1267",
       "name": "steps"
     },
@@ -69,13 +68,11 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 18,
-          "currentEquation": "18"
+          "ioValue": 18
         },
         {
           "name": "y length",
-          "ioValue": 6,
-          "currentEquation": "6"
+          "ioValue": 6
         }
       ]
     },
@@ -91,8 +88,7 @@
         },
         {
           "name": "height",
-          "ioValue": 0.5,
-          "currentEquation": "0.5"
+          "ioValue": 0.5
         }
       ]
     },
@@ -229,8 +225,7 @@
         },
         {
           "name": "z-axis degrees",
-          "ioValue": 90,
-          "currentEquation": "90"
+          "ioValue": 90
         }
       ]
     },
@@ -360,14 +355,14 @@
       "x": 0.361328125,
       "y": 0.8285714285714286,
       "uniqueID": "id-1327",
-      "name": "height / step",
+      "name": "height / (step + 1)",
       "ioValues": [
         {
           "name": "step",
-          "ioValue": 6
+          "ioValue": 4
         }
       ],
-      "currentEquation": "height / step"
+      "currentEquation": "height / (step + 1)"
     },
     {
       "atomType": "GitHubMolecule",
@@ -378,8 +373,8 @@
       "ioValues": [
         {
           "name": "Number",
-          "ioValue": 6,
-          "currentEquation": "steps"
+          "ioValue": 5,
+          "currentEquation": "steps + 1"
         },
         {
           "name": "Geometry",
@@ -534,7 +529,7 @@
             },
             {
               "name": "count",
-              "ioValue": 6
+              "ioValue": 5
             },
             {
               "name": "distY",
@@ -686,13 +681,13 @@
       "x": 0.47851562499999994,
       "y": 0.6257142857142857,
       "uniqueID": "id-1392",
-      "name": "totalWidth / steps",
-      "currentEquation": "totalWidth / steps"
+      "name": "totalWidth / (steps + 1)",
+      "currentEquation": "totalWidth / (steps + 1)"
     },
     {
       "atomType": "Input",
       "x": 0.0231,
-      "y": 0.7714285714285715,
+      "y": 0.39200000000000007,
       "uniqueID": "id-1397",
       "name": "tolerance"
     },
@@ -725,13 +720,11 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "yDist",
-          "ioValue": 20,
-          "currentEquation": "20"
+          "ioValue": 20
         },
         {
           "name": "zDist",
@@ -751,17 +744,16 @@
         },
         {
           "name": "xDist",
-          "ioValue": -0.1,
+          "ioValue": -0.02,
           "currentEquation": "-tolerance"
         },
         {
           "name": "yDist",
-          "ioValue": 0,
-          "currentEquation": "0"
+          "ioValue": 0
         },
         {
           "name": "zDist",
-          "ioValue": 0.1,
+          "ioValue": 0.02,
           "currentEquation": "tolerance"
         }
       ]
@@ -778,7 +770,7 @@
         },
         {
           "name": "height",
-          "ioValue": -0.1,
+          "ioValue": -0.02,
           "currentEquation": "-tolerance"
         }
       ]
@@ -903,16 +895,6 @@
       "ap2ID": "id-1526"
     },
     {
-      "ap2Name": "x",
-      "ap1ID": "id-1282",
-      "ap2ID": "id-1319"
-    },
-    {
-      "ap2Name": "height",
-      "ap1ID": "id-1282",
-      "ap2ID": "id-1327"
-    },
-    {
       "ap2Name": "Shape",
       "ap1ID": "id-1291",
       "ap2ID": "id-1282"
@@ -926,11 +908,6 @@
       "ap2Name": "Shape",
       "ap1ID": "id-1297",
       "ap2ID": "id-1303"
-    },
-    {
-      "ap2Name": "x",
-      "ap1ID": "id-1303",
-      "ap2ID": "id-1598"
     },
     {
       "ap2Name": "geometry",
@@ -976,11 +953,6 @@
       "ap2Name": "distZ",
       "ap1ID": "id-1327",
       "ap2ID": "id-1348"
-    },
-    {
-      "ap2Name": "Shape 1",
-      "ap1ID": "id-1348",
-      "ap2ID": "id-1481"
     },
     {
       "ap2Name": "distX",
@@ -1051,6 +1023,26 @@
       "ap2Name": "y length",
       "ap1ID": "id-1598",
       "ap2ID": "id-1315"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-1282",
+      "ap2ID": "id-1319"
+    },
+    {
+      "ap2Name": "height",
+      "ap1ID": "id-1282",
+      "ap2ID": "id-1327"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-1303",
+      "ap2ID": "id-1598"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-1348",
+      "ap2ID": "id-1481"
     }
   ],
   "unitsKey": "Inches",
