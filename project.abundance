@@ -20,8 +20,9 @@
       "currentEquation": "6"
     },
     {
-      "name": "Input",
-      "ioValue": 10
+      "name": "tolerance",
+      "ioValue": 0.1,
+      "currentEquation": "0.1"
     }
   ],
   "topLevel": true,
@@ -324,8 +325,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.4694010416666667,
-      "y": 0.5771428571428572,
+      "x": 0.4466145833333333,
+      "y": 0.43999999999999995,
       "uniqueID": "id-1315",
       "ioValues": [
         {
@@ -374,8 +375,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.4375,
-      "y": 0.8,
+      "x": 0.42643229166666663,
+      "y": 0.7514285714285714,
       "uniqueID": "id-1327",
       "name": "height / step",
       "ioValues": [
@@ -392,8 +393,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.6471354166666667,
-      "y": 0.7,
+      "x": 0.5826822916666666,
+      "y": 0.6371428571428571,
       "uniqueID": "id-1348",
       "name": "Linear-Pattern",
       "ioValues": [
@@ -721,8 +722,8 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.55078125,
-      "y": 0.7714285714285715,
+      "x": 0.521484375,
+      "y": 0.8028571428571428,
       "uniqueID": "id-1392",
       "name": "totalWidth / steps",
       "ioValues": [
@@ -737,12 +738,13 @@
       "atomType": "Input",
       "x": 0.0231,
       "y": 0.7714285714285715,
-      "uniqueID": "id-1397"
+      "uniqueID": "id-1397",
+      "name": "tolerance"
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.826171875,
-      "y": 0.29714285714285715,
+      "x": 0.7903645833333334,
+      "y": 0.051428571428571435,
       "uniqueID": "id-1407",
       "name": "moveToPoints",
       "ioValues": [
@@ -896,144 +898,6 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.72265625,
-      "y": 0.5314285714285714,
-      "uniqueID": "id-1449",
-      "name": "vec.Z",
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-1447",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Code",
-          "x": 0.45182291666666663,
-          "y": 0.40571428571428575,
-          "uniqueID": "id-1448",
-          "interpreterVersion": 1,
-          "code": "// edges.inShape\n\nfunction run() {\n  return [0, 0, 1]\n}",
-          "compiledCode": "\"use strict\";\n// edges.inShape\nfunction run() {\n    return [0, 0, 1];\n}\n"
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-1448",
-          "ap2ID": "id-1447"
-        }
-      ],
-      "parentRepo": {
-        "lastFoundGit": "2026-09-03T10:23:39.040Z",
-        "privateRepo": false,
-        "repoName": "vec.Z",
-        "dateCreated": "2026-08-19T20:14:18Z",
-        "likes": 0,
-        "pngURL": "https://raw.githubusercontent.com/tristan-huber/vec.Z/main/project.png",
-        "readMe": "https://raw.githubusercontent.com/tristan-huber/vec.Z/master/README.md?sanitize=true",
-        "yyyy": 2026,
-        "topMoleculeID": "id-46",
-        "userSetAsThumbnail": false,
-        "githubMoleculesUsed": [],
-        "html_url": "https://github.com/tristan-huber/vec.Z",
-        "topics": [
-          "abundance-tool"
-        ],
-        "pullRequests": [],
-        "parentRepo": null,
-        "forks": 0,
-        "dateModified": "739848",
-        "ranking": 0.3,
-        "searchField": "vec.z tristan-huber returns the z axis unit vector, ie [0,0,1] abundance-tool",
-        "owner": "tristan-huber",
-        "description": "Returns the z axis unit vector, ie [0,0,1]",
-        "contentURL": "https://raw.githubusercontent.com/tristan-huber/vec.Z/master/project.abundance?sanitize=true",
-        "svgURL": "https://raw.githubusercontent.com/tristan-huber/vec.Z/master/project.svg?sanitize=true",
-        "isLocal": false
-      },
-      "unitsKey": "Unitless",
-      "fileTypeVersion": 1,
-      "lastReloadedFromGithubAt": 1788459193450
-    },
-    {
-      "atomType": "GitHubMolecule",
-      "x": 0.7057291666666667,
-      "y": 0.4142857142857143,
-      "uniqueID": "id-1458",
-      "name": "vec.X",
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-1456",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Code",
-          "x": 0.40950520833333337,
-          "y": 0.47428571428571425,
-          "uniqueID": "id-1457",
-          "interpreterVersion": 1,
-          "code": "// edges.inShape\n\nfunction run() {\n  return [1, 0, 0]\n}",
-          "compiledCode": "\"use strict\";\n// edges.inShape\nfunction run() {\n    return [1, 0, 0];\n}\n"
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-1457",
-          "ap2ID": "id-1456"
-        }
-      ],
-      "parentRepo": {
-        "lastFoundGit": "2026-09-03T10:23:39.040Z",
-        "privateRepo": false,
-        "repoName": "vec.X",
-        "dateCreated": "2026-08-19T19:23:39Z",
-        "likes": 0,
-        "pngURL": "https://raw.githubusercontent.com/tristan-huber/vec.X/main/project.png",
-        "readMe": "https://raw.githubusercontent.com/tristan-huber/vec.X/master/README.md?sanitize=true",
-        "yyyy": 2026,
-        "topMoleculeID": "id-34",
-        "userSetAsThumbnail": false,
-        "githubMoleculesUsed": [],
-        "html_url": "https://github.com/tristan-huber/vec.X",
-        "topics": [
-          "abundance-tool"
-        ],
-        "pullRequests": [],
-        "parentRepo": null,
-        "forks": 0,
-        "dateModified": "739847",
-        "ranking": 0.3,
-        "searchField": "vec.x tristan-huber returns the x positive vector as an array of three numbers, ie [0,0,1]. compatible with a point or vertex type input. vector magnitude 1 abundance-tool",
-        "owner": "tristan-huber",
-        "description": "Returns the X positive vector as an array of three numbers, ie [0,0,1]. Compatible with a Point or Vertex type input. Vector magnitude 1",
-        "contentURL": "https://raw.githubusercontent.com/tristan-huber/vec.X/master/project.abundance?sanitize=true",
-        "svgURL": "https://raw.githubusercontent.com/tristan-huber/vec.X/master/project.svg?sanitize=true",
-        "isLocal": false
-      },
-      "unitsKey": "Unitless",
-      "fileTypeVersion": 1,
-      "lastReloadedFromGithubAt": 1788459205911
-    },
-    {
-      "atomType": "GitHubMolecule",
       "x": 0.5208333333333334,
       "y": 0.22285714285714286,
       "uniqueID": "id-1469",
@@ -1141,8 +1005,8 @@
     },
     {
       "atomType": "Fusion",
-      "x": 0.7154947916666666,
-      "y": 0.8114285714285715,
+      "x": 0.6822916666666666,
+      "y": 0.7599999999999999,
       "uniqueID": "id-1481",
       "ioValues": [
         {
@@ -1406,6 +1270,33 @@
                 0.5000003000000018
               ]
             }
+          }
+        },
+        {
+          "name": "Shape 3",
+          "ioValue": {
+            "geometry": "extrude-rectangle-3.5000014000000133-6.000000200000002-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--0.1",
+            "dimension": "3D",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "tags": [],
+            "bom": []
           }
         }
       ],
@@ -1698,6 +1589,120 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.853515625,
+      "y": 0.07714285714285714,
+      "uniqueID": "id-1532",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.734375,
+      "y": 0.2,
+      "uniqueID": "id-1536",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": -0.25000010000000095
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.6106770833333334,
+      "y": 0.2657142857142857,
+      "uniqueID": "id-1542",
+      "name": "-x/2",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 0.5000002000000019
+        }
+      ],
+      "currentEquation": "-x/2"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.7486979166666666,
+      "y": 0.9114285714285715,
+      "uniqueID": "id-1546",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": -0.1,
+          "currentEquation": "-tolerance"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0.1,
+          "currentEquation": "tolerance"
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.447265625,
+      "y": 0.8914285714285715,
+      "uniqueID": "id-1556",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": -0.1,
+          "currentEquation": "-tolerance"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.83203125,
+      "y": 0.6057142857142858,
+      "uniqueID": "id-1561",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -1727,6 +1732,11 @@
       "ap2ID": "id-1469"
     },
     {
+      "ap2Name": "retain",
+      "ap1ID": "id-1274",
+      "ap2ID": "id-1532"
+    },
+    {
       "ap2Name": "x",
       "ap1ID": "id-1282",
       "ap2ID": "id-1319"
@@ -1735,6 +1745,11 @@
       "ap2Name": "height",
       "ap1ID": "id-1282",
       "ap2ID": "id-1327"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-1282",
+      "ap2ID": "id-1542"
     },
     {
       "ap2Name": "Shape",
@@ -1760,6 +1775,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-1315",
       "ap2ID": "id-1323"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1315",
+      "ap2ID": "id-1556"
     },
     {
       "ap2Name": "x length",
@@ -1797,14 +1817,29 @@
       "ap2ID": "id-1348"
     },
     {
+      "ap2Name": "remove",
+      "ap1ID": "id-1407",
+      "ap2ID": "id-1532"
+    },
+    {
       "ap2Name": "toPoints",
       "ap1ID": "id-1469",
       "ap2ID": "id-1407"
     },
     {
-      "ap2Name": "shapeToMove",
+      "ap2Name": "geometry",
       "ap1ID": "id-1481",
-      "ap2ID": "id-1407"
+      "ap2ID": "id-1536"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-1481",
+      "ap2ID": "id-1546"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-1481",
+      "ap2ID": "id-1561"
     },
     {
       "ap2Name": "zDirOverride",
@@ -1820,6 +1855,26 @@
       "ap2Name": "geometry",
       "ap1ID": "id-1526",
       "ap2ID": "id-1274"
+    },
+    {
+      "ap2Name": "shapeToMove",
+      "ap1ID": "id-1536",
+      "ap2ID": "id-1407"
+    },
+    {
+      "ap2Name": "zDist",
+      "ap1ID": "id-1542",
+      "ap2ID": "id-1536"
+    },
+    {
+      "ap2Name": "retain",
+      "ap1ID": "id-1546",
+      "ap2ID": "id-1561"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-1556",
+      "ap2ID": "id-1481"
     }
   ],
   "unitsKey": "Inches",
