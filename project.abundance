@@ -877,8 +877,8 @@
       "x": 0.4446614583333333,
       "y": 0.23428571428571426,
       "uniqueID": "id-1598",
-      "name": "x + tolerance * 2",
-      "currentEquation": "x + tolerance * 2"
+      "name": "x * 1.05",
+      "currentEquation": "x * 1.05"
     }
   ],
   "allConnectors": [
